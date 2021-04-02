@@ -1,0 +1,24 @@
+.equal {
+  margin-right: 15px;
+}
+
+.result-sum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unit {
+  display: flex;
+  justify-content: center;
+}
+
+.icons-index {
+  display: flex;
+  justify-content: center;
+}
+
+.title-main {
+  display: flex;
+  justify-content: center;
+}

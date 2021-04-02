@@ -1,0 +1,52 @@
+<body>
+    <br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <h1 class="title-main">CONVERTIR ENTRE VOLUMEN</h1>
+                <br>
+                <div class="badge bg-dark text-wrap" >
+                    <h6>Ingresa un número que será la cantidad de tu tiempo y ingresa la unidad de tu cantidad para convertirla en Segundos(s), Minutos(min), Hora(h)</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div class="row justify-content-center mt-1 pt-1">
+            <div class="col-md-7">
+                <div class="row form-group">
+                    <label for="rut" class="col-form-label col-md-3">Hora a convertir<span class="text-danger">*</span></label>
+                    <div class="col-md-6">
+                        <input type="number" id="num1" class="form-control" placeholder="Ingresa un número">
+                    </div>
+
+                    <div class="col-md-3">
+                        <select class="form-select" id="optionVolume" required>
+                            <option class="text-primary" value="0">Unidad</option>
+                            <option class="text-primary">uL</option>
+                            <option class="text-primary">mL</option>
+                            <option class="text-primary">L</option>
+                            <option class="text-primary">m3</option>
+                            <option class="text-primary">Gal</option>
+                        </select>
+                    </div>
+                </div>
+
+                <br>
+
+                <br>
+
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-success" type="button" onclick="volumeResult()">CONVERTIR!</button>
+                </div>
+
+                <br>
+
+                <div id="resultSum"></div>
+            </div>
+        </div>
+    </div>
+</body>
