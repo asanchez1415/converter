@@ -1,7 +1,6 @@
 /*///////// Function that calculates mass conversions /////////*/
 function massResult() {
   massCalculate();
-
   if (optionMass != 0) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -19,6 +18,8 @@ function massResult() {
     );
     xhttp.send();
   }
+  /* if (optionMass != 0) {
+  } */
 }
 
 /*///////// Function that calculates time conversions /////////*/

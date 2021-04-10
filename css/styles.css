@@ -1,24 +1,98 @@
-.equal {
-  margin-right: 15px;
+body {
+  background-color: #0a0a0a;
+  color: white;
 }
 
-.result-sum {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.color-nav-footer {
+  background-color: rgba(66, 52, 77, 0.466);
 }
 
-.unit {
-  display: flex;
-  justify-content: center;
+.color {
+  color: white;
 }
 
-.icons-index {
-  display: flex;
-  justify-content: center;
+/* Formulario: input y select */
+.num-input {
+  background-color: #111111e6;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #b300b3;
+  color: #ffffff;
+  border-radius: 2px;
+  height: 3rem;
 }
 
-.title-main {
-  display: flex;
-  justify-content: center;
+.unit-select {
+  background-color: #111111e6;
+  border: 1px solid #b300b3;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.custom-input {
+  width: 100%; /* 100% del ancho del contenedor */
+}
+.col {
+  margin: 0 auto; /* Posiciona el elemento en el centro */
+}
+
+.custom-align-right {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+.custom-align-left {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+/* ////////////////////////// */
+.center-page {
+  background-color: rgb(25, 25, 25);
+  min-height: 690px;
+  padding: 3px;
+}
+
+/* Estilos tabla de resultados */
+tr {
+  border-bottom: 1px solid #b300b3 !important;
+}
+
+.table-result {
+  max-width: 350px;
+  border: 2px solid #b300b3;
+}
+
+.unit-result {
+  color: black;
+  background-color: blanchedalmond;
+  padding-right: 3px;
+  padding-left: 3px;
+  border-radius: 5px;
+}
+
+.result {
+  color: black;
+  background-color: blanchedalmond;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+
+/* ////////////////////////// */
+
+/* Estilos tabla de resultados */
+
+.card-option {
+  background-color: #0a0a0a;
+  border: 1px solid #b300b3;
+  border-radius: 2px;
+}
+
+.button-card {
+  background-color: #0a0a0a !important;
+  color: #b300b3;
+}
+
+.logo-card {
+  font-size: 100px;
+  color: rgb(255, 255, 255);
 }

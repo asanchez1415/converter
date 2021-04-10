@@ -1,32 +1,28 @@
 function mass() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("operation").innerHTML = this.responseText;
-    }
+  dataJSON = {
+    caseMass: {
+      title: "CONVERTIR ENTRE MASA",
+      paragraph:
+        "Ingresa un número que será la cantidad de tu masa y ingresa la unidad de tu cantidad para convertirla en Microgramo(ug), Milígramo(mg), Gramo(g), Kilogramo(kg) y Toneladas(ton)",
+      units: [
+        "<option>ug</option>",
+        "<option>mg</option>",
+        "<option>g</option>",
+        "<option>Kg</option>",
+        "<option>Ton</option>",
+      ],
+    },
   };
-  xhttp.open("GET", "views/operations/mass_o.html", true);
-  xhttp.send();
-}
 
-function time() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("operation").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "views/operations/time_o.html", true);
-  xhttp.send();
-}
+  paragraphFinal = dataJSON["caseMass"]["paragraph"];
+  titleFinal = dataJSON["caseMass"]["title"];
 
-function volume() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("operation").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "views/operations/volume_o.html", true);
-  xhttp.send();
+  unitsFinal = dataJSON["caseMass"]["units"];
+
+  var unitComplete = "";
+  for (var unit of unitsFinal) {
+    unitComplete += unit;
+  }
+
+  printTypeOperation(paragraphFinal, titleFinal, unitComplete);
 }
