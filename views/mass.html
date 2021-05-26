@@ -28,53 +28,25 @@
 
       <br>
 
-
       <div class="accordion">
         <button type="button" class="accordion__button">Más sobre la masa...</button>
         <div class="accordion__content">
+          <h4>Masa</h4>
+          <hr>
+
           <p>
-            Si bien el concepto de masa de un objeto y el peso son nociones precientíficas, es a partir de las
-            reflexiones de Galileo, René Descartes y muy especialmente a partir de Isaac Newton que surge la noción
-            moderna de masa. Así, el concepto de masa surge de la confluencia de dos leyes: la ley de gravitación
-            universal de Newton y la segunda ley de Newton (o 2.º principio). Según la ley de la gravitación
-            universal, la atracción entre dos cuerpos es proporcional al producto de dos constantes, denominadas masa
-            gravitacional —una de cada uno de ellos—, siendo así la masa gravitatoria una propiedad de la materia en
-            virtud de la cual dos cuerpos se atraen; por la 2ª ley de Newton, la fuerza aplicada sobre un cuerpo es
-            directamente proporcional a la aceleración que experimenta, denominándose a la constante de
-            proporcionalidad: masa inercial de un cuerpo.</p>
+            Es una magnitud utilizada para medir la cantidad de materia contenida en un cuerpo. Este concepto es uno de
+            los más antiguos en la historia de la física, estimándose unos 7 mil años de antigüedad.
+          </p>
 
-          <div class="carousel carousel-slider">
-            <div class="carousel__contenedor">
-              <button aria-label="Anterior" class="carousel__anterior">
-                <i class="fas fa-chevron-left"></i>
-              </button>
+          <img class="materialboxed img-1" src="../images/kilogramo.jpg">
 
-              <div class="carousel__lista">
-                <div class="carousel__elemento">
-                  <img src="../../images/kilogramo.jpg" alt="" srcset="">
-                  <p>Foto de kilogramo</p>
-                </div>
-                <div class="carousel__elemento">
-                  <img src="../../images/kilogramo.jpg" alt="" srcset="">
-                  <p>Foto de kilogramo</p>
-                </div>
-                <div class="carousel__elemento">
-                  <img src="../../images/kilogramo.jpg" alt="" srcset="">
-                  <p>Foto de kilogramo</p>
-                </div>
-              </div>
-
-              <button aria-label="Siguiente" class="carousel__siguiente">
-                <i class="fas fa-chevron-right"></i>
-              </button>
-            </div>
-
-            <div role="tablist" class="carousel__indicadores"></div>
-          </div>
-
+          <p>Cabe destacar que la masa y el peso son conceptos diferentes, ya que Newton explica que el peso es
+            proporcional a la masa.</p>
         </div>
       </div>
 
+      <!-- Acordion de equivalencias -->
       <div class="accordion">
         <button type="button" class="accordion__button">Formulario...</button>
         <div class="accordion__content">
@@ -112,7 +84,6 @@
   <div id="footer"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
   <script src="../resources/header.js"></script>
   <script src="../resources/footer.js"></script>
   <script src="../js/styles.js"></script>
@@ -123,6 +94,11 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () { var elems = document.querySelectorAll('.sidenav'); var instances = M.Sidenav.init(elems); });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.materialboxed');
+      var instances = M.Materialbox.init(elems);
+    });
   </script>
 
 </body>

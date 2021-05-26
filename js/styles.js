@@ -13,7 +13,7 @@ document.querySelectorAll(".accordion__button").forEach((button) => {
 });
 
 /* Carousel */
-window.addEventListener("load", function () {
+/* window.addEventListener("load", function () {
   new Glider(document.querySelector(".carousel__lista"), {
     slidesToShow: 1,
     dots: ".carousel__indicadores",
@@ -23,4 +23,4 @@ window.addEventListener("load", function () {
       next: ".carousel__siguiente",
     },
   });
-});
+}); */

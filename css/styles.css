@@ -58,7 +58,7 @@ tr {
 }
 
 .table-result {
-  max-width: 500px;
+  max-width: 550px;
   border: 2px solid #b300b3;
 }
 
@@ -105,14 +105,19 @@ tr {
 .accordion__button {
   display: block;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   border: none;
   outline: none;
   cursor: pointer;
   background: rgb(25, 25, 25);
   color: #ffffff;
-  text-align: left;
+  text-align: center;
   transition: backgorund 0.2s;
+  border: #141414 solid 1px;
+}
+
+.accordion__button:focus {
+  background: #555555 !important;
 }
 
 .accordion__button::after {
@@ -136,7 +141,7 @@ tr {
   padding: 0 15px;
   font-family: sans-serif;
   font-size: large;
-  background: #000000;
+  background: #0a0a0a;
   color: #d6d6d6 !important;
 }
 
@@ -185,4 +190,15 @@ tr {
 
 .icon-copy {
   color: #ff8aff;
+}
+
+/* Imagenes de definiciones por cada unidad */
+.img-1 {
+  float: right;
+}
+
+@media (max-width: 800px) {
+  .img-1 {
+    float: none;
+  }
 }
