@@ -14,25 +14,7 @@
 </head>
 
 <body>
-  <nav class="color-nav-footer">
-    <div class="nav-wrapper">
-      <a href="index.html" class="brand-logo">Convertidor</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-calculator"></i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html"><i class="fas fa-balance-scale-right"></i>Entre masa</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <ul class="sidenav purple darken-4" id="mobile-demo">
-    <li><a href="sass.html"><i class="fas fa-balance-scale-right text-white"></i>Convertir entre masa</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
-  </ul>
+  <div id="header"></div>
 
 
   <div id="operation">
@@ -44,14 +26,15 @@
 
         <!-- Convertir entre masa -->
         <div class="col s12 m4">
-          <div class="card card-option">
+          <div class="card hoverable card-option">
             <div class="card-content white-text">
-              <a href="#" onclick="mass()">
+              <a href="views/mass.html">
                 <i class="fas fa-balance-scale-right logo-card"></i>
               </a>
             </div>
             <div class="card-action center">
-              <button class="waves-effect waves-light btn black button-card" type="submit" onclick="mass()">CONVERTIR
+              <button class="waves-effect waves-light btn black button-card" type="submit"
+                onclick="chooseMass()">CONVERTIR
                 ENTRE MASA</button>
             </div>
           </div>
@@ -59,14 +42,15 @@
 
         <!-- Convertir entre volumen -->
         <div class="col s12 m4">
-          <div class="card card-option">
+          <div class="card hoverable card-option">
             <div class="card-content white-text">
-              <a href="#" onclick="mass()">
+              <a href="#" onclick="chooseOperation()">
                 <i class="fas fa-cube logo-card"></i>
               </a>
             </div>
             <div class="card-action center">
-              <button class="waves-effect waves-light btn black button-card" type="submit" onclick="mass()">CONVERTIR
+              <button class="waves-effect waves-light btn black button-card" type="submit"
+                onclick="chooseOperation()">CONVERTIR
                 ENTRE VOLUMEN</button>
             </div>
           </div>
@@ -74,14 +58,15 @@
 
         <!-- Convertir entre distancia -->
         <div class="col s12 m4">
-          <div class="card card-option">
+          <div class="card hoverable card-option">
             <div class="card-content white-text">
-              <a href="#" onclick="mass()">
+              <a href="#" onclick="chooseOperation()">
                 <i class="fas fa-ruler logo-card"></i>
               </a>
             </div>
             <div class="card-action center">
-              <button class="waves-effect waves-light btn black button-card" type="submit" onclick="mass()">CONVERTIR
+              <button class="waves-effect waves-light btn black button-card" type="submit"
+                onclick="chooseOperation()">CONVERTIR
                 ENTRE DISTANCIA</button>
             </div>
           </div>
@@ -89,14 +74,15 @@
 
         <!-- Convertir entre densidad -->
         <div class="col s12 m4">
-          <div class="card card-option">
+          <div class="card hoverable card-option">
             <div class="card-content white-text">
-              <a href="#" onclick="mass()">
+              <a href="#" onclick="chooseOperation()">
                 <i class="fas fa-tint logo-card"></i>
               </a>
             </div>
             <div class="card-action center">
-              <button class="waves-effect waves-light btn black button-card" type="submit" onclick="mass()">CONVERTIR
+              <button class="waves-effect waves-light btn black button-card" type="submit"
+                onclick="chooseOperation()">CONVERTIR
                 ENTRE DENSIDAD</button>
             </div>
           </div>
@@ -104,14 +90,15 @@
 
         <!-- Convertir entre tiempo -->
         <div class="col s12 m4">
-          <div class="card card-option">
+          <div class="card hoverable card-option">
             <div class="card-content white-text">
-              <a href="#" onclick="mass()">
+              <a href="#" onclick="chooseOperation()">
                 <i class="fas fa-clock logo-card"></i>
               </a>
             </div>
             <div class="card-action center">
-              <button class="waves-effect waves-light btn black button-card" type="submit" onclick="mass()">CONVERTIR
+              <button class="waves-effect waves-light btn black button-card" type="submit"
+                onclick="chooseOperation()">CONVERTIR
                 ENTRE TIEMPO</button>
             </div>
           </div>
@@ -119,14 +106,15 @@
 
         <!-- Convertir entre fuerza -->
         <div class="col s12 m4">
-          <div class="card card-option">
+          <div class="card hoverable card-option">
             <div class="card-content white-text">
-              <a href="#" onclick="mass()">
+              <a href="#" onclick="chooseOperation()">
                 <i class="fas fa-people-carry logo-card"></i>
               </a>
             </div>
             <div class="card-action center">
-              <button class="waves-effect waves-light btn black button-card" type="submit" onclick="mass()">CONVERTIR
+              <button class="waves-effect waves-light btn black button-card" type="submit"
+                onclick="chooseOperation()">CONVERTIR
                 ENTRE FUERZA</button>
             </div>
           </div>
@@ -134,14 +122,15 @@
 
         <!-- Convertir entre energia -->
         <div class="col s12 m4">
-          <div class="card card-option">
+          <div class="card hoverable card-option">
             <div class="card-content white-text">
-              <a href="#" onclick="mass()">
+              <a href="#" onclick="chooseOperation()">
                 <i class="fas fa-battery-half logo-card"></i>
               </a>
             </div>
             <div class="card-action center">
-              <button class="waves-effect waves-light btn black button-card" type="submit" onclick="mass()">CONVERTIR
+              <button class="waves-effect waves-light btn black button-card" type="submit"
+                onclick="chooseOperation()">CONVERTIR
                 ENTRE ENERGÍA</button>
             </div>
           </div>
@@ -149,51 +138,35 @@
 
       </div>
 
+      <!-- <div class="row">
+        <div class="carousel">
+          <a class="carousel-item" href="#one!"><img src="../../images/kilogramo.jpg"></a>
+        </div>
+      </div> -->
+
     </div>
   </div>
 
-  <footer class="page-footer color-nav-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-      </div>
-    </div>
-  </footer>
-
-
-
-
+  <div id="footer"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/styles.js"></script>
+  <script src="resources/header.js"></script>
+  <script src="resources/footer.js"></script>
   <script src="js/sweetAlert.js"></script>
   <script src="js/operations.js"></script>
   <script src="views/view.js"></script>
   <script src="js/results.js"></script>
   <script src="js/calculate.js"></script>
+  <script src="views/show_results.js"></script>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems);
     });
   </script>
+
 </body>
 
 </html>

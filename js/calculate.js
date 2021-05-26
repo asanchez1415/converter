@@ -5,10 +5,16 @@ Index of functions (calculate)
 */
 
 function massCalculate() {
-  let num1 = parseInt(document.getElementById("num1").value);
+  let numberQuantity = parseInt(
+    document.getElementById("numberQuantity").value
+  );
   let optionMass = document.getElementById("optionMass").value;
 
+  if (numberQuantity) {
+  }
+
   switch (optionMass) {
+    /* Alerta en caso de no elegir la unidad de medida */
     case "0":
       Swal.fire({
         title: "<strong>Alto ahí!</strong>",
@@ -21,96 +27,103 @@ function massCalculate() {
       });
       break;
 
+    /* Caso para calcular desde los microgramos */
     case "ug":
       //Ya tiene los ug
-      mg = num1 / 1000;
+      mg = numberQuantity / 1000;
       g = mg / 1000;
       kg = g / 1000;
       ton = kg / 1000;
 
-      unitResult = JSON.stringify({
-        mg: mg,
-        g: g,
-        kg: kg,
-        ton: ton,
-      });
+      unitAndResult = [
+        { unit: "mg", result: mg },
+        { unit: "g", result: g },
+        { unit: "Kg", result: kg },
+        { unit: "ton", result: ton },
+      ];
       optionMassR = optionMass;
       break;
 
+    /* Caso para calcular desde los miligramos */
     case "mg":
-      ug = num1 * 1000;
+      ug = numberQuantity * 1000;
       //Ya tiene los mg
-      g = num1 / 1000;
+      g = numberQuantity / 1000;
       kg = g / 1000;
       ton = kg / 1000;
 
-      unitResult = JSON.stringify({
-        ug: ug,
-        g: g,
-        kg: kg,
-        ton: ton,
-      });
+      unitAndResult = [
+        { unit: "ug", result: ug },
+        { unit: "g", result: g },
+        { unit: "Kg", result: kg },
+        { unit: "ton", result: ton },
+      ];
       optionMassR = optionMass;
       break;
 
+    /* Caso para calcular desde los gramos */
     case "g":
-      mg = num1 * 1000;
+      mg = numberQuantity * 1000;
       ug = mg * 1000;
       //Ya tiene los g
-      kg = num1 / 1000;
+      kg = numberQuantity / 1000;
       ton = kg / 1000;
 
-      unitResult = JSON.stringify({
-        ug: ug,
-        mg: mg,
-        kg: kg,
-        ton: ton,
-      });
+      unitAndResult = [
+        { unit: "mg", result: mg },
+        { unit: "ug", result: ug },
+        { unit: "Kg", result: kg },
+        { unit: "ton", result: ton },
+      ];
       optionMassR = optionMass;
       break;
 
-    case "Kg":
-      g = num1 * 1000;
+    /* Caso para calcular desde los kilos */
+    case "kg":
+      g = numberQuantity * 1000;
       mg = g * 1000;
       ug = mg * 1000;
       //Ya tiene los kg
-      ton = num1 / 1000;
+      ton = numberQuantity / 1000;
 
-      unitResult = JSON.stringify({
-        ug: ug,
-        mg: mg,
-        g: g,
-        ton: ton,
-      });
+      unitAndResult = [
+        { unit: "ug", result: ug },
+        { unit: "mg", result: mg },
+        { unit: "g", result: g },
+        { unit: "ton", result: ton },
+      ];
       optionMassR = optionMass;
       break;
 
-    case "Ton":
-      kg = num1 * 1000;
+    /* Caso para calcular desde la tonelada */
+    case "ton":
+      kg = numberQuantity * 1000;
       g = kg * 1000;
       mg = g * 1000;
       ug = mg * 1000;
       //Ya tiene los ton
 
-      unitResult = JSON.stringify({
-        ug: ug,
-        mg: mg,
-        g: g,
-        kg: kg,
-      });
+      unitAndResult = [
+        { unit: "ug", result: ug },
+        { unit: "mg", result: mg },
+        { unit: "g", result: g },
+        { unit: "kg", result: kg },
+      ];
       optionMassR = optionMass;
       break;
   }
 }
 
 function timeCalculate() {
-  let num1 = parseInt(document.getElementById("num1").value);
+  let numberQuantity = parseInt(
+    document.getElementById("numberQuantity").value
+  );
   let optionTime = document.getElementById("optionTime").value;
 
   switch (optionTime) {
     case "s":
       //Ya tiene los s
-      min = num1 / 60;
+      min = numberQuantity / 60;
       h = min / 60;
 
       unitResult = JSON.stringify({
@@ -121,9 +134,9 @@ function timeCalculate() {
       break;
 
     case "min":
-      s = num1 * 60;
+      s = numberQuantity * 60;
       //Ya tiene los min
-      h = num1 / 60;
+      h = numberQuantity / 60;
 
       unitResult = JSON.stringify({
         s: s,
@@ -133,7 +146,7 @@ function timeCalculate() {
       break;
 
     case "h":
-      min = num1 * 60;
+      min = numberQuantity * 60;
       s = min * 60;
       //Ya tiene los s
 
@@ -147,13 +160,15 @@ function timeCalculate() {
 }
 
 function volumeCalculate() {
-  let num1 = parseInt(document.getElementById("num1").value);
+  let numberQuantity = parseInt(
+    document.getElementById("numberQuantity").value
+  );
   let optionVolume = document.getElementById("optionVolume").value;
 
   switch (optionVolume) {
     case "uL":
       //Ya tiene los ul
-      ml = num1 / 1000;
+      ml = numberQuantity / 1000;
       l = ml / 1000;
       m3 = l / 1000;
       gal = m3 * 264;
@@ -168,9 +183,9 @@ function volumeCalculate() {
       break;
 
     case "mL":
-      ul = num1 * 1000;
+      ul = numberQuantity * 1000;
       //Ya tiene los ml
-      l = num1 / 1000;
+      l = numberQuantity / 1000;
       m3 = l / 1000;
       gal = m3 * 264;
 
@@ -184,10 +199,10 @@ function volumeCalculate() {
       break;
 
     case "L":
-      ml = num1 * 1000;
+      ml = numberQuantity * 1000;
       ul = mL * 1000;
       //Ya tiene los l
-      m3 = num1 / 1000;
+      m3 = numberQuantity / 1000;
       gal = m3 * 264;
 
       unitResult = JSON.stringify({
@@ -200,11 +215,11 @@ function volumeCalculate() {
       break;
 
     case "m3":
-      l = num1 * 1000;
+      l = numberQuantity * 1000;
       mL = l * 1000;
       ul = ml * 1000;
       //Ya tiene los m3
-      gal = num1 * 264;
+      gal = numberQuantity * 264;
 
       unitResult = JSON.stringify({
         uL: ul,
@@ -216,7 +231,7 @@ function volumeCalculate() {
       break;
 
     case "Gal":
-      m3 = num1 / 264;
+      m3 = numberQuantity / 264;
       l = m3 * 1000;
       ml = l * 1000;
       ul = ml * 1000;
