@@ -8,8 +8,7 @@ function showResult() {
 
           <th>RESULTADO</th>
 
-          <th>COPIAR RESULTADO</th>
-
+          <th></th>
         </tr>
       </thead>
       

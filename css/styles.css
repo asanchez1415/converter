@@ -4,7 +4,7 @@ body {
 }
 
 .center-page {
-  background-color: rgb(25, 25, 25);
+  background-color: #191919;
   min-height: 690px;
   padding: 3px;
 }
@@ -52,7 +52,8 @@ body {
 }
 /* ////////////////////////// */
 
-/* Estilos tabla de resultados */
+/* Tabla de resultados calculados */
+
 tr {
   border-bottom: 1px solid #b300b3 !important;
 }
@@ -78,9 +79,70 @@ tr {
   border-radius: 5px;
 }
 
+.button-copy {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.icon-copy {
+  color: #ff8aff;
+}
+
 /* ////////////////////////// */
 
-/* Estilos tabla de resultados */
+/* Tabla de equivalencias o formulario */
+.table-eq--position {
+  margin: 30px 0px;
+}
+
+.table-eq {
+  max-width: 550px;
+  border: 2px solid #b300b3;
+  background: #191919;
+}
+
+.letter {
+  font-size: medium;
+  color: white;
+}
+
+#show-slide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .letter {
+    text-align: left;
+    font-size: small;
+  }
+  .section-head {
+    border-bottom: none !important;
+  }
+  .table-eq--position {
+    margin-bottom: 0;
+  }
+  #show-slide {
+    display: initial;
+  }
+}
+
+.show-slide__content {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.icon-hand {
+  animation: backInRight;
+  animation-duration: 5s;
+}
+
+/* ////////////////////////// */
+
+/* Cartas de eleccion para las unidades de medidas */
 
 .card-option {
   background-color: #0a0a0a;
@@ -179,26 +241,39 @@ tr {
 
 /* ////////////////////////// */
 
-/* Boton de copiar resultado calculado */
-.button-copy {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.icon-copy {
-  color: #ff8aff;
-}
-
 /* Imagenes de definiciones por cada unidad */
-.img-1 {
+.thumbnail {
   float: right;
+  margin-left: 15px;
+  margin-bottom: 30px;
 }
 
-@media (max-width: 800px) {
-  .img-1 {
-    float: none;
+.thumbnail__frame {
+  padding: 10px;
+  background: #555555;
+  border: rgb(0, 0, 0) 1px solid;
+  border-radius: 3px;
+}
+
+.thumbnail__img {
+  max-width: 300px;
+}
+
+.thumbnail__caption {
+  text-align: left;
+  color: #ffffff;
+  font-size: medium;
+  padding-top: 4px;
+  padding-bottom: -3px;
+}
+
+@media (max-width: 600px) {
+  .thumbnail {
+    float: left;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .thumbnail__img {
+    max-width: 250px;
   }
 }

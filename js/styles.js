@@ -24,3 +24,10 @@ document.querySelectorAll(".accordion__button").forEach((button) => {
     },
   });
 }); */
+
+function showSlideAnimation() {
+  const btn = document.querySelector(".icon-hand");
+  btn.addEventListener("click", () => {
+    setTimeout(() => btn.classList.add("icon-hand"), 500);
+  });
+}
