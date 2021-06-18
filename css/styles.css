@@ -277,3 +277,72 @@ tr {
     max-width: 250px;
   }
 }
+
+/* ////////////////////////// */
+
+/* Boton menu*/
+.button-menu {
+  background: none;
+  border: none;
+  color: #e7e7e7;
+}
+
+.button-menu:focus {
+  background: none;
+}
+/* Menu lateral*/
+.lateral-menu {
+  background: #0a0a0a;
+}
+
+.letter-menu {
+  color: white;
+}
+
+/* ////////////////////////// */
+
+/* Boton recargar*/
+.reload {
+  font-size: large;
+  color: #d6d6d6;
+}
+.reload:hover {
+  background: #000000;
+}
+
+/* ////////////////////////// */
+
+/* Parrafo de cada unidad */
+.section-warn {
+  padding-top: 0px;
+}
+
+.paragraph-u {
+  text-align: center;
+}
+
+.paragraph-u__back {
+  background: #353535;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.paragraph-u__back-warn {
+  background: #330f0f;
+  font-size: medium;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  .paragraph-u__back {
+    background: #191919;
+    padding: 0px;
+  }
+  .paragraph-u__back-warn {
+    background: #191919;
+    color: #db3333;
+    padding: 0px;
+  }
+}
+

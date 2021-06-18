@@ -1,17 +1,8 @@
-/* 
-Index of functions (calculate)
-1. calculateMass
-5. calculateTime
-*/
-
 function massCalculate() {
-  let numberQuantity = parseInt(
+  let numberQuantity = parseFloat(
     document.getElementById("numberQuantity").value
   );
   let optionMass = document.getElementById("optionMass").value;
-
-  if (numberQuantity) {
-  }
 
   switch (optionMass) {
     /* Alerta en caso de no elegir la unidad de medida */
