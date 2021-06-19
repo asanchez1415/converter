@@ -253,10 +253,13 @@ tr {
   background: #555555;
   border: rgb(0, 0, 0) 1px solid;
   border-radius: 3px;
+  max-width: 320px;
 }
 
 .thumbnail__img {
-  max-width: 300px;
+  max-width: 240px;
+  margin: auto;
+  border-radius: 3px;
 }
 
 .thumbnail__caption {
@@ -265,6 +268,7 @@ tr {
   font-size: medium;
   padding-top: 4px;
   padding-bottom: -3px;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -322,7 +326,7 @@ tr {
 }
 
 .paragraph-u__back {
-  background: #353535;
+  background: #272727;
   padding: 10px;
   border-radius: 5px;
 }
@@ -343,6 +347,7 @@ tr {
     background: #191919;
     color: #db3333;
     padding: 0px;
+    border-radius: 0px;
   }
 }
 

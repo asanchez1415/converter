@@ -20,9 +20,10 @@
   <div id="operation">
     <div class="container center-page">
       <a href="mass.html"><i class="fas fa-redo-alt reload"></i></a>
-      <h3 class="center">CONVERTIR ENTRE MASA</h3>
+      <h3 class="center">CONVERTIR ENTRE VOLUMEN</h3>
       <div class="section center">
-        <h6 class="paragraph-u"><span class="paragraph-u__back">Ingresa un número que será la cantidad de tu masa y además puedes elegir cuál es la unidad de tu masa original.</span></h6>
+        <h6 class="paragraph-u"><span class="paragraph-u__back">Ingresa un número que será la 
+          cantidad de tu volumen y además puedes elegir cuál es la unidad de tu volumen original.</span></h6>
       </div>
 
       <div class="section-warn center">
@@ -33,16 +34,16 @@
 
       <div class="row valign-wrapper">
         <div class="input-field col s8 m6 l5 custom-align-right">
-          <input onkeyup="massCalculate()" class="browser-default num-input validate custom-input" id="numberQuantity"
+          <input onkeyup="volumeCalculate()" class="browser-default num-input validate custom-input" id="numberQuantity"
             placeholder="Ingrese la cantidad de tu unidad" type="number">
         </div>
-        <div onchange="massCalculate()" class="input-field col s4 m4 l3 custom-align-left">
-          <select class="browser-default unit-select" id="optionMass">
-            <option value="ug">Microgramo (ug)</option>
-            <option value="mg">Miligramo (mg)</option>
-            <option value="g">Gramo (g)</option>
-            <option value="kg">Kilogramo (kg)</option>
-            <option value="ton">Tonelada (ton)</option>
+        <div onchange="volumeCalculate()" class="input-field col s4 m4 l3 custom-align-left">
+          <select class="browser-default unit-select" id="optionVolume">
+            <option value="uL">Microlitro (uL)</option>
+            <option value="ml">Mililitro (ml)</option>
+            <option value="L">Litro (L)</option>
+            <option value="m3">Metros Cúbicos (m3)</option>
+            <option value="gal">Galón (Gal)</option>
           </select>
         </div>
       </div>
@@ -54,32 +55,31 @@
       <br>
 
       <div class="accordion">
-        <button type="button" class="accordion__button">Más sobre la masa...</button>
+        <button type="button" class="accordion__button">Más sobre el volumen...</button>
         <div class="accordion__content">
           <h4>Masa</h4>
           <hr>
 
           <p>
-            Es una magnitud utilizada para medir la cantidad de materia contenida en un cuerpo. Este concepto es uno de
-            los más antiguos en la historia de la física, estimándose unos 7 mil años de antigüedad.
+            El volumen es una magnitud que mide el espacio tridimensional que un objeto ocupa, 
+            contrario al área que solo se concierne con 2 dimensiones (usualmente alto y ancho), 
+            el volumen también toma en cuenta el alto de el objeto. 
           </p>
 
           <div class="thumbnail">
             <div class="thumbnail__frame">
-              <img class="materialboxed thumbnail__img" src="../images/mass.jpg">
-              <div class="thumbnail__caption">Cilindro de un kilogramo oficial</div>
+              <img class="materialboxed thumbnail__img" src="../images/volume2.jpg">
+              <div class="thumbnail__caption">Jarra para medir el volumen de líquidos</div>
             </div>
           </div>
 
           <p>
-            Cabe destacar que la masa y el peso son conceptos diferentes, ya
-            que Newton explica que el peso es proporcional a la masa.
+            En el sistema internacional de unidades este adopta la medida de m3 para obras como pozos,
+             piscinas y cargamentos.
           </p>
 
           <p>
-            También la masa tiene una fuerte relación con la inercia y la gravedad, con esto se puede definir la masa
-            con el peso en el suelo. Aplicaciones: esta tiene un sin fin de usos, como medir la masa de un objeto, la
-            masa corporal, etc.
+            Para el uso común se usa L y mL.
           </p>
 
           <div class="references">
@@ -106,29 +106,29 @@
 
               <tbody>
                 <tr>
-                  <td>Microgramo(ug)</td>
+                  <td>Microlitro(uL)</td>
                   <td>10^-6</td>
                   <td>0,000001</td>
                 </tr>
                 <tr>
-                  <td>Miligramo(mg)</td>
+                  <td>Mililitro(ml)</td>
                   <td>10^-3</td>
                   <td>0,001</td>
                 </tr>
                 <tr>
-                  <td>Gramo(g)</td>
+                  <td>Litro(L)</td>
                   <td>10^0</td>
                   <td>1</td>
                 </tr>
                 <tr>
-                  <td>Kilogramo(kg)</td>
+                  <td>Metro cúbico(m3)</td>
                   <td>10^3</td>
                   <td>1.000</td>
                 </tr>
                 <tr>
-                  <td>Tonelada(ton)</td>
-                  <td>10^6</td>
-                  <td>1.000.000</td>
+                  <td>Galón(Gal)</td>
+                  <td>(10^0) / (3,785)</td>
+                  <td>0,264172</td>
                 </tr>
               </tbody>
             </table>
@@ -164,7 +164,7 @@
         </li>
 
         <li>
-          <a class="waves-effect white-text" href="volume.html"><i class="fas 
+          <a class="waves-effect white-text" href="mass.html"><i class="fas 
           fa-cube white-text"></i>VOLUMEN</a>
         </li>
 
@@ -206,7 +206,7 @@
   <script src="../js/styles.js"></script>
   <script src="../js/sweetAlert.js"></script>
   <script src="../js/results.js"></script>
-  <script src="../js/calc/massCalculate.js"></script>
+  <script src="../js/calc/volumeCalculate.js"></script>
   <script src="../js/show_results.js"></script>
 
   <script>

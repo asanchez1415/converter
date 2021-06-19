@@ -1,7 +1,7 @@
 /*///////// Function that calculates mass conversions /////////*/
 function massResult() {
   massCalculate();
-  showResult();
+  
 }
 
 function copy(id_element) {

@@ -18,7 +18,7 @@ function showResult() {
             (element) =>
               `<tr>
               <td>
-                <b class="unit-result">${optionMassR}</b>
+                <b class="unit-result">${optionR}</b>
                 <i class="fas fa-arrow-right"></i>
                 <b class="unit-result">${element.unit}</b>
               </td>
