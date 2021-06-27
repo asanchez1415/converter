@@ -95,7 +95,7 @@ tr {
 
 /* Tabla de equivalencias o formulario */
 .table-eq--position {
-  margin: 30px 0px;
+  margin: 15px 0px 30px 0px;
 }
 
 .table-eq {
@@ -335,7 +335,7 @@ tr {
   background: #330f0f;
   font-size: medium;
   padding: 5px;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 @media (max-width: 600px) {
