@@ -9,12 +9,22 @@ document.getElementById("footer").innerHTML = `
 <div class="container">
   <div class="row">
     <div class="col l6 s12">
-      <h5 class="white-text">Footer Content</h5>
-      <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+    <h5 class="white-text">Unidades de medida</h5>
+    <p class="grey-text text-lighten-4">
+    Se llama unidad de medida a una referencia convencional que se usa para medir 
+    la magnitud física de un determinado objeto, sustancia o fenómeno.
+    </p>
+
+    <p>
+      Las unidades de medida se han usado desde tiempos remotos. Por esta razón, 
+      han ido variando con el tiempo, en función no solo de las necesidades humanas 
+      sino de la tecnología disponible. Esto implica que han existido, y aún existen, 
+      diversos sistemas de unidades de medida.
+    </p>
     </div>
     <div class="col l4 offset-l2 s12">
     <ul>
-      <li><a class="grey-text text-lighten-3" href="#!">Unidades SI</a></li>
+      <li><a class="grey-text text-lighten-3">Siete unidades base del S.I</a></li>
       <img src="../images/map_si.svg.png" alt="Unidades SI" width="200" height="200">
     </ul>
     </div>
@@ -23,7 +33,7 @@ document.getElementById("footer").innerHTML = `
 
 <div class="footer-copyright">
   <div class="container">
-    © 2021 designed by <a href="https://github.com/asanchez1415" target="_blank">asanchez1415</a>
+    © 2021 designed by <a href="https://github.com/asanchez1415" class="link" target="_blank">asanchez1415</a>
   </div>
 </div>
 
@@ -35,12 +45,22 @@ document.getElementById("footer").innerHTML = `
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="white-text">Footer Content</h5>
-        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        <h5 class="white-text">Unidades de medida</h5>
+        <p class="grey-text text-lighten-4">
+        Se llama unidad de medida a una referencia convencional que se usa para medir 
+        la magnitud física de un determinado objeto, sustancia o fenómeno.
+        </p>
+
+        <p>
+        Las unidades de medida se han usado desde tiempos remotos. Por esta razón, 
+        han ido variando con el tiempo, en función no solo de las necesidades humanas 
+        sino de la tecnología disponible. Esto implica que han existido, y aún existen, 
+        diversos sistemas de unidades de medida.
+        </p>
       </div>
       <div class="col l4 offset-l2 s12">
       <ul>
-        <li><a class="grey-text text-lighten-3" href="#!">Unidades SI</a></li>
+        <li><a class="grey-text text-lighten-3">Siete unidades base del S.I</a></li>
         <img src="images/map_si.svg.png" alt="Unidades SI" width="200" height="200">
       </ul>
       </div>
@@ -49,7 +69,7 @@ document.getElementById("footer").innerHTML = `
   
   <div class="footer-copyright">
     <div class="container">
-      © 2021 designed by <a href="https://github.com/asanchez1415" target="_blank">asanchez1415</a>
+      © 2021 designed by <a href="https://github.com/asanchez1415" class="link" target="_blank">asanchez1415</a>
     </div>
   </div>
   

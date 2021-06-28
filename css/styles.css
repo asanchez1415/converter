@@ -303,6 +303,10 @@ tr {
   color: white;
 }
 
+.option-lateral:hover {
+  background: #555555;
+}
+
 /* ////////////////////////// */
 
 /* Boton recargar*/
@@ -351,3 +355,18 @@ tr {
   }
 }
 
+/* Referencias */
+
+.references:hover {
+  color: #b300b3;
+}
+
+/* ////////////////////////// */
+
+/* Link */
+
+.link:hover {
+  color: #b300b3;
+}
+
+/* ////////////////////////// */
