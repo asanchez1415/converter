@@ -19,10 +19,11 @@
   <div id="header"></div>
   <div id="operation">
     <div class="container center-page">
-      <a href="mass.html"><i class="fas fa-redo-alt reload"></i></a>
-      <h3 class="center">CONVERTIR ENTRE MASA</h3>
+      <a href="pressure.html"><i class="fas fa-redo-alt reload"></i></a>
+      <h3 class="center">CONVERTIR ENTRE PRESIÓN</h3>
       <div class="section center">
-        <h6 class="paragraph-u"><span class="paragraph-u__back">Ingresa un número que será la cantidad de tu masa y además puedes elegir cuál es la unidad de tu masa original.</span></h6>
+        <h6 class="paragraph-u"><span class="paragraph-u__back">Ingresa un número que será la 
+          cantidad de tu presión y además puedes elegir cuál es la unidad de tu presión original.</span></h6>
       </div>
 
       <div class="section-warn center">
@@ -33,16 +34,16 @@
 
       <div class="row valign-wrapper">
         <div class="input-field col s8 m6 l5 custom-align-right">
-          <input onkeyup="massCalculate()" class="browser-default num-input validate custom-input" id="numberQuantity"
+          <input onkeyup="pressureCalculate()" class="browser-default num-input validate custom-input" id="numberQuantity"
             placeholder="Ingrese la cantidad de tu unidad" type="number">
         </div>
-        <div onchange="massCalculate()" class="input-field col s4 m4 l3 custom-align-left">
-          <select class="browser-default unit-select" id="optionMass">
-            <option value="ug">Microgramo (ug)</option>
-            <option value="mg">Miligramo (mg)</option>
-            <option value="g">Gramo (g)</option>
-            <option value="kg">Kilogramo (kg)</option>
-            <option value="ton">Tonelada (ton)</option>
+        <div onchange="pressureCalculate()" class="input-field col s4 m4 l3 custom-align-left">
+          <select class="browser-default unit-select" id="optionPressure">
+            <option value="Pa">Pascal (Pa)</option>
+            <option value="mmHg">Milímetros de mercurio (mmHg)</option>
+            <option value="torr">Torr (torr)</option>
+            <option value="psi">Libra por pulgada cuadrada (psi)</option>
+            <option value="atm">Atmósfera física (atm)</option>            
           </select>
         </div>
       </div>
@@ -54,32 +55,26 @@
       <br>
 
       <div class="accordion">
-        <button type="button" class="accordion__button">Más sobre la masa...</button>
+        <button type="button" class="accordion__button">Más sobre la presión...</button>
         <div class="accordion__content">
-          <h4>Masa</h4>
+          <h4>Presión</h4>
           <hr>
 
           <p>
-            Es una magnitud utilizada para medir la cantidad de materia contenida en un cuerpo. Este concepto es uno de
-            los más antiguos en la historia de la física, estimándose unos 7 mil años de antigüedad.
+            La presión es la fuerza que se aplica sobre un área, generalmente se estudia 
+            asumiendo que la fuerza proviene desde un ángulo de 90° para eliminar variables.
           </p>
 
           <div class="thumbnail">
             <div class="thumbnail__frame">
-              <img class="materialboxed thumbnail__img" src="../images/more_info/mass.jpg">
-              <div class="thumbnail__caption">Cilindro de un kilogramo oficial</div>
+              <img class="materialboxed thumbnail__img" src="../images/more_info/pressure.jpg">
+              <div class="thumbnail__caption">Dinamómetro utilizado para medir fuerzas</div>
             </div>
           </div>
 
           <p>
-            Cabe destacar que la masa y el peso son conceptos diferentes, ya
-            que Newton explica que el peso es proporcional a la masa.
-          </p>
-
-          <p>
-            También la masa tiene una fuerte relación con la inercia y la gravedad, con esto se puede definir la masa
-            con el peso en el suelo. Aplicaciones: esta tiene un sin fin de usos, como medir la masa de un objeto, la
-            masa corporal, etc.
+            El sistema internacional de unidades generalmente usa Atm, Pa y mmHg. 
+            Para la medición de ambientes, sistemas y aparatos respectivamente.
           </p>
 
           <div class="references">
@@ -95,8 +90,8 @@
         <div class="accordion__content">
 
           <div class="section-warn center">
-            <h6 class="paragraph-u"><span class="paragraph-u__back-warn">Equivalencias hechas a partir del Kilogramo(Kg), 
-              ya que es la unidad fundamental de la masa según el S.I.</span></h6>
+            <h6 class="paragraph-u"><span class="paragraph-u__back-warn">Equivalencias hechas a partir del Pascal(Pa), 
+              ya que es la unidad fundamental de la presión según el S.I.</span></h6>
           </div>
 
           <div class="table-eq--position">
@@ -111,29 +106,29 @@
 
               <tbody>
                 <tr>
-                  <td>Microgramo(ug)</td>
-                  <td>10^-9</td>
-                  <td>0.000000001 kg</td>
-                </tr>
-                <tr>
-                  <td>Miligramo(mg)</td>
-                  <td>10^-6</td>
-                  <td>0.000001 kg</td>
-                </tr>
-                <tr>
-                  <td>Gramo(g)</td>
-                  <td>10^-3</td>
-                  <td>0.001 kg</td>
-                </tr>
-                <tr>
-                  <td>Kilogramo(kg)</td>
+                  <td>Pascal(Pa)</td>
                   <td>10^0</td>
-                  <td>1 kg</td>
+                  <td>1 Pa</td>
                 </tr>
                 <tr>
-                  <td>Tonelada(ton)</td>
-                  <td>10^3</td>
-                  <td>1000 kg</td>
+                  <td>Milímetros de mercurio(mmHg)</td>
+                  <td>(10^0) x (133.32)</td>
+                  <td>133.32 Pa</td>
+                </tr>
+                <tr>
+                  <td>Torr(torr)</td>
+                  <td>(10^0) x (133.32)</td>
+                  <td>133.32 Pa</td>
+                </tr>
+                <tr>
+                  <td>Libra por pulgada cuadrada(psi)</td>
+                  <td>(10^0) x (6894,76)</td>
+                  <td>6894,76 Pa</td>
+                </tr>
+                <tr>
+                  <td>Atmósfera física(atm)</td>
+                  <td>(10^0) x (101325)</td>
+                  <td>101325 Pa</td>
                 </tr>
               </tbody>
             </table>
@@ -150,6 +145,7 @@
 
       <br>
 
+      
       <div id="lateral-menu"></div>
 
       <br>
@@ -165,7 +161,7 @@
   <script src="../js/styles.js"></script>
   <script src="../js/sweetAlert.js"></script>
   <script src="../js/results.js"></script>
-  <script src="../js/calc/massCalculate.js"></script>
+  <script src="../js/calc/pressureCalculate.js"></script>
   <script src="../js/show_results.js"></script>
 
   <script>

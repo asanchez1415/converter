@@ -1,4 +1,4 @@
-function distanceCalculate() {
+function densityCalculate() {
   let numberQuantity = parseFloat(
     document.getElementById("numberQuantity").value
   );
@@ -29,7 +29,7 @@ function distanceCalculate() {
       m = numberQuantity / 100;
       km = m / 1000;
       //Ya tiene los cm
-      yarda = numberQuantity / 91.44;
+      yarda = numberQuantity / 91,44;
       pulgadas = yarda * 36;
 	    mm = numberQuantity * 10;
 
@@ -47,7 +47,7 @@ function distanceCalculate() {
     case "in":
       yarda = numberQuantity / 36;
       //Ya tiene la Pulgada
-      mm = numberQuantity * 25.4;
+      mm = numberQuantity * 25,4;
       cm = mm / 10;
       m = cm / 100;
       km = m / 1000;
@@ -66,7 +66,7 @@ function distanceCalculate() {
     case "yd":
       //Ya tiene la Yarda
       pulgadas = numberQuantity * 36;
-      mm = numberQuantity * 914.4;
+      mm = numberQuantity * 914,4;
       cm = mm / 10;
       m = cm / 100;
       Km = m / 1000;
@@ -104,7 +104,7 @@ function distanceCalculate() {
     case "Km":
       //Ya tiene los Km
       m = numberQuantity * 1000;
-      yarda = m * 1.094;
+      yarda = m * 1,094;
       pulgadas = yarda * 36;
       cm = m * 100;
 	    mm = cm * 10;

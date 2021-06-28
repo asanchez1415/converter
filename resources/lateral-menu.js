@@ -27,22 +27,27 @@ document.getElementById("lateral-menu").innerHTML = `<ul id="slide-out" class="s
 </li>
 
 <li>
-  <a class="waves-effect white-text" href="mass.html"><i class="fas fa-tint white-text"></i>DENSIDAD</a>
+  <a class="waves-effect white-text" href="mass.html"><i class="fas 
+  fa-tint white-text"></i>DENSIDAD</a>
 </li>
 
 <li>
-  <a class="waves-effect white-text" href="mass.html"><i class="fas fa-clock white-text"></i>TIEMPO</a>
+  <a class="waves-effect white-text" href="time.html"><i class="fas 
+  fa-clock white-text"></i>TIEMPO</a>
 </li>
 
 <li>
-  <a class="waves-effect white-text" href="mass.html"><i class="fas fa-people-carry white-text"></i>FUERZA</a>
+  <a class="waves-effect white-text" href="force.html"><i class="fas 
+  fa-people-carry white-text"></i>FUERZA</a>
 </li>
 
 <li>
-  <a class="waves-effect white-text" href="mass.html"><i class="fas fa-battery-half white-text"></i>ENERGÍA</a>
+  <a class="waves-effect white-text" href="mass.html"><i class="fas 
+  fa-battery-half white-text"></i>ENERGÍA</a>
 </li>
 
 <li>
-  <a class="waves-effect white-text" href="mass.html"><i class="far fa-futbol white-text"></i></i>PRESIÓN</a>
+  <a class="waves-effect white-text" href="pressure.html"><i class="far 
+  fa-futbol white-text"></i></i>PRESIÓN</a>
 </li>
 </ul>`
