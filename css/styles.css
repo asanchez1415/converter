@@ -3,6 +3,13 @@ body {
   color: white;
 }
 
+@media (max-width: 600px) {
+  .letter-title {
+    font-size: 30px;
+  }
+}
+
+
 .center-page {
   background-color: #191919;
   min-height: 690px;
@@ -50,6 +57,7 @@ body {
   margin-right: auto !important;
   margin-left: 0 !important;
 }
+
 /* ////////////////////////// */
 
 /* Tabla de resultados calculados */
@@ -99,7 +107,7 @@ tr {
 }
 
 .table-eq {
-  max-width: 550px;
+  max-width: 600px;
   border: 2px solid #b300b3;
   background: #191919;
 }
